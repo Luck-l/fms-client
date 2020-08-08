@@ -10,16 +10,6 @@ Vue.config.productionTip = false
 // Vue.config.productionTip = process.env.NODE_ENV==='production'
 Vue.use(ElementUI)
 
-// //设置axios为form-data
-// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
-// axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded';
-// axios.defaults.transformRequest = [function (data) {
-//   let ret = ''
-//   for (let it in data) {
-//     ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
-//   }
-//   return ret
-// }]
 // axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 Vue.prototype.$axios = axios

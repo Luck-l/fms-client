@@ -43,7 +43,7 @@ axios.interceptors.response.use(
       endLoading();
       Message.error(error.response.data)
       const { status } = error.response
-      if(status == 401){
+      if(status === 401){
         Message.error("token值无效，请重新登陆")
         //清除token
         localStorage.removeItem("eleToken")
